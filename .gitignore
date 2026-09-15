@@ -1,0 +1,8 @@
+node_modules/
+.env
+data/photos/*
+data/inspiration/*
+data/items.json
+data/history.json
+!data/photos/.gitkeep
+!data/inspiration/.gitkeep

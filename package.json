@@ -1,0 +1,17 @@
+{
+  "name": "closet-stylist",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local app: match Pinterest inspiration photos against your own tagged closet using Claude.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.35.4"
+  }
+}

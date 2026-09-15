@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Closet Stylist</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Caveat:wght@700&family=Bungee&family=Kalam:wght@700&family=Playfair+Display:ital,wght@1,800&display=swap" />
+<link rel="stylesheet" href="style.css" />
+
+<!-- iOS / Android home-screen app support -->
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#6f9c96" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Closet" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152.png" />
+<link rel="apple-touch-icon" sizes="167x167" href="icons/apple-touch-icon-167.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+</head>
+<body>
+  <header>
+    <svg class="crayon-flower" style="top:-8px; left:-6px; width:60px; height:60px; transform:rotate(-6deg);" viewBox="0 0 100 120">
+      <defs>
+        <filter id="crayonWobble1" x="-30%" y="-30%" width="160%" height="160%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="3" result="n"/>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+        </filter>
+      </defs>
+      <g filter="url(#crayonWobble1)">
+        <line x1="50" y1="68" x2="47" y2="112" stroke="#4a9c4a" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="36" cy="95" rx="10" ry="4.5" fill="#7bc47f" stroke="#3a7d3a" stroke-width="2" transform="rotate(-25 36 95)"/>
+        <ellipse cx="60" cy="100" rx="10" ry="4.5" fill="#7bc47f" stroke="#3a7d3a" stroke-width="2" transform="rotate(25 60 100)"/>
+        <circle cx="50" cy="28" r="15" fill="#f2617e" stroke="#a8324a" stroke-width="3"/>
+        <circle cx="70" cy="40" r="15" fill="#f2617e" stroke="#a8324a" stroke-width="3"/>
+        <circle cx="64" cy="62" r="15" fill="#f2617e" stroke="#a8324a" stroke-width="3"/>
+        <circle cx="36" cy="62" r="15" fill="#f2617e" stroke="#a8324a" stroke-width="3"/>
+        <circle cx="30" cy="40" r="15" fill="#f2617e" stroke="#a8324a" stroke-width="3"/>
+        <circle cx="50" cy="45" r="14" fill="#ffd23f" stroke="#c99a1e" stroke-width="3"/>
+      </g>
+    </svg>
+
+    <svg class="crayon-flower" style="top:-4px; right:-4px; width:46px; height:46px; transform:rotate(10deg);" viewBox="0 0 100 120">
+      <defs>
+        <filter id="crayonWobble2" x="-30%" y="-30%" width="160%" height="160%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="9" result="n"/>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+        </filter>
+      </defs>
+      <g filter="url(#crayonWobble2)">
+        <line x1="50" y1="68" x2="53" y2="112" stroke="#4a9c4a" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="38" cy="97" rx="9" ry="4" fill="#7bc47f" stroke="#3a7d3a" stroke-width="2" transform="rotate(-20 38 97)"/>
+        <circle cx="50" cy="28" r="15" fill="#5aa9e6" stroke="#2f6fa0" stroke-width="3"/>
+        <circle cx="70" cy="40" r="15" fill="#5aa9e6" stroke="#2f6fa0" stroke-width="3"/>
+        <circle cx="64" cy="62" r="15" fill="#5aa9e6" stroke="#2f6fa0" stroke-width="3"/>
+        <circle cx="36" cy="62" r="15" fill="#5aa9e6" stroke="#2f6fa0" stroke-width="3"/>
+        <circle cx="30" cy="40" r="15" fill="#5aa9e6" stroke="#2f6fa0" stroke-width="3"/>
+        <circle cx="50" cy="45" r="14" fill="#fff6d9" stroke="#c99a1e" stroke-width="3"/>
+      </g>
+    </svg>
+
+    <h1 class="collage-title">
+      <span class="scrap jag1 p1" style="transform:rotate(-7deg);"><span class="t1" style="font-size:2.1rem;">C</span></span>
+      <span class="scrap jag2 p4" style="transform:rotate(4deg);"><span class="t2" style="font-size:1.9rem;">l</span></span>
+      <span class="scrap jag3 p2" style="transform:rotate(-3deg);"><span class="t3" style="font-size:1.7rem;">o</span></span>
+      <span class="scrap jag1 p3" style="transform:rotate(6deg);"><span class="t4" style="font-size:2rem;">s</span></span>
+      <span class="scrap jag2 p5" style="transform:rotate(-5deg);"><span class="t5" style="font-size:2.3rem;">e</span></span>
+      <span class="scrap jag3 p1" style="transform:rotate(3deg);"><span class="t1" style="font-size:1.8rem;">t</span></span>
+      <span class="scrap jag2 p2" style="transform:rotate(5deg);"><span class="t3" style="font-size:2rem;">S</span></span>
+      <span class="scrap jag1 p4" style="transform:rotate(-4deg);"><span class="t2" style="font-size:1.9rem;">t</span></span>
+      <span class="scrap jag3 p3" style="transform:rotate(7deg);"><span class="t1" style="font-size:1.7rem;">y</span></span>
+      <span class="scrap jag2 p1" style="transform:rotate(-6deg);"><span class="t4" style="font-size:2.1rem;">l</span></span>
+      <span class="scrap jag1 p5" style="transform:rotate(3deg);"><span class="t5" style="font-size:1.9rem;">i</span></span>
+      <span class="scrap jag3 p2" style="transform:rotate(-5deg);"><span class="t3" style="font-size:1.8rem;">s</span></span>
+      <span class="scrap jag2 p4" style="transform:rotate(6deg);"><span class="t1" style="font-size:2rem;">t</span></span>
+    </h1>
+    <span class="tape-tagline">your closet, your rules</span>
+    <nav>
+      <button class="tab-btn active" data-tab="match">Find a Match</button>
+      <button class="tab-btn" data-tab="closet">My Closet</button>
+      <button class="tab-btn" data-tab="history">History</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- FIND A MATCH -->
+    <section id="tab-match" class="tab active">
+      <div class="panel">
+        <h2>Upload a Pinterest photo</h2>
+        <p class="hint">Pick a look you like. Claude will compare it against your tagged closet items and suggest what you already own that gets close.</p>
+
+        <label class="file-drop" id="inspoDrop">
+          <input type="file" id="inspoFile" accept="image/*" hidden />
+          <span id="inspoDropText">Click to choose a photo</span>
+          <img id="inspoPreview" hidden />
+        </label>
+
+        <textarea id="matchContext" placeholder="Optional: any context — occasion, what you like about this look, etc."></textarea>
+
+        <div class="filter-row">
+          <span class="filter-label">Only search these categories:</span>
+          <div id="categoryFilters" class="chip-row"></div>
+        </div>
+
+        <div class="cost-estimate" id="costEstimate"></div>
+
+        <button id="matchBtn" class="primary-btn" disabled>Find matches</button>
+        <div id="matchStatus" class="status"></div>
+      </div>
+
+      <div id="matchResult" class="result" hidden></div>
+    </section>
+
+    <!-- MY CLOSET -->
+    <section id="tab-closet" class="tab">
+      <div class="panel">
+        <h2>Add a closet item</h2>
+        <p class="hint">Choose a photo of a piece you own. You control exactly which photos get added — nothing is scanned automatically.</p>
+
+        <form id="addItemForm">
+          <label class="file-drop" id="itemDrop">
+            <input type="file" id="itemFile" accept="image/*" multiple hidden required />
+            <span id="itemDropText">Click to choose photo(s) — select several at once for front/back/detail shots of the same item</span>
+            <div id="itemPreviewList" class="preview-list"></div>
+          </label>
+
+          <input type="text" id="itemName" placeholder="Name (e.g. 'blue wide-leg jeans')" />
+
+          <select id="itemCategory">
+            <option value="top">Top</option>
+            <option value="bottom">Bottom</option>
+            <option value="dress">Dress</option>
+            <option value="outerwear">Outerwear</option>
+            <option value="shoes">Shoes</option>
+            <option value="accessory">Accessory</option>
+            <option value="other" selected>Other</option>
+          </select>
+
+          <input type="text" id="itemTags" placeholder="Tags, comma separated (e.g. denim, casual, blue, summer)" />
+          <textarea id="itemNotes" placeholder="Optional notes"></textarea>
+
+          <button type="submit" class="primary-btn">Add to closet</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header-row">
+          <h2>Your items (<span id="itemCount">0</span>)</h2>
+          <select id="closetFilter">
+            <option value="">All categories</option>
+          </select>
+        </div>
+        <div id="closetGrid" class="grid"></div>
+      </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section id="tab-history" class="tab">
+      <div class="panel">
+        <h2>Past matches</h2>
+        <div id="historyList"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
